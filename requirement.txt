@@ -1,0 +1,26 @@
+# Dice Roller - Python Requirements
+# No external dependencies required!
+# All modules used are part of Python's standard library:
+# - random (random number generation)
+# - time (delays and timing)
+# - os (operating system interface)
+# - sys (system parameters)
+# - typing (type hints)
+
+# Minimum Python version required
+python>=3.6
+
+# Optional development dependencies for contributors
+# Uncomment if you want to contribute to development:
+
+# Code formatting and linting
+# black>=21.0.0
+# flake8>=3.8.0
+# mypy>=0.800
+
+# Testing framework
+# pytest>=6.0.0
+# pytest-cov>=2.10.0
+
+# Building executables
+# pyinstaller>=4.0

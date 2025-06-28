@@ -1,0 +1,194 @@
+# 🎲 Expected Terminal Output
+
+This file shows what you can expect to see when running the dice roller program.
+
+## 📺 Initial Startup
+
+```
+🎲 Initializing Dice Roller...
+
+╔══════════════════════════════════════════════════════════════╗
+║                        🎲 DICE ROLLER 🎲                     ║
+║                                                              ║
+║        Welcome to the Ultimate Six-Sided Die Simulator!     ║
+║                                                              ║
+║        Press ENTER to roll the dice | Type 'quit' to exit   ║
+║        Type 'stats' to see your rolling statistics          ║
+╚══════════════════════════════════════════════════════════════╝
+
+🎊 Welcome! Let's start rolling some dice! 🎊
+
+🎮 Press ENTER to roll, 'stats' for statistics, or 'quit' to exit: 
+```
+
+## 🎬 Rolling Animation Sequence
+
+### Step 1: Countdown
+```
+🎯 Get ready to roll...
+⏰ Rolling in 3...
+⏰ Rolling in 2...
+⏰ Rolling in 1...
+🚀 Rolling NOW!
+```
+
+### Step 2: Rolling Animation
+```
+==================================================
+🎲 ROLLING THE DICE... 🎲
+==================================================
+    ✨ [●○●○●○] ✨    
+```
+*(This animates with different symbols and patterns)*
+
+### Step 3: Result Display
+
+#### Example 1 - Rolling a 6
+```
+🎊 RESULT 🎊
+==================================================
+    ┌─────────┐
+    │  ●   ●  │
+    │  ●   ●  │
+    │  ●   ●  │
+    └─────────┘
+
+    🎯 You rolled a 6! 🎯
+==================================================
+
+    🏆 JACKPOT! Maximum roll! 🏆
+    ✨ 🎉🎉🎉🎉 ✨
+
+📊 Roll #1 complete!
+```
+
+#### Example 2 - Rolling a 3
+```
+🎊 RESULT 🎊
+==================================================
+    ┌─────────┐
+    │  ●      │
+    │    ●    │
+    │      ●  │
+    └─────────┘
+
+    🎯 You rolled a 3! 🎯
+==================================================
+
+    ⭐ Getting warmer! ⭐
+
+📊 Roll #2 complete!
+```
+
+#### Example 3 - Rolling a 1
+```
+🎊 RESULT 🎊
+==================================================
+    ┌─────────┐
+    │         │
+    │    ●    │
+    │         │
+    └─────────┘
+
+    🎯 You rolled a 1! 🎯
+==================================================
+
+    🔥 Unlucky start! Try again! 🔥
+
+📊 Roll #3 complete!
+```
+
+## 📊 Statistics Display
+
+When user types 'stats':
+
+```
+============================================================
+📊 ROLLING STATISTICS 📊
+============================================================
+🎲 Total Rolls: 15
+📈 Average Roll: 3.73
+🏆 Highest Roll: 6
+📉 Lowest Roll: 1
+
+🎯 Roll Distribution:
+  1: [████░░░░░░░░░░░░░░░░] 3 (20.0%)
+  2: [██░░░░░░░░░░░░░░░░░░] 1 ( 6.7%)
+  3: [██████░░░░░░░░░░░░░░] 3 (20.0%)
+  4: [████░░░░░░░░░░░░░░░░] 2 (13.3%)
+  5: [████████░░░░░░░░░░░░] 4 (26.7%)
+  6: [██████░░░░░░░░░░░░░░] 2 (13.3%)
+
+📋 Last 10 Rolls: [6, 3, 1, 5, 4, 5, 3, 2, 5, 3]
+============================================================
+```
+
+## 🏁 Exit Sequence
+
+When user types 'quit':
+
+```
+👋 Thanks for playing! Goodbye!
+🎲 You rolled 15 times with an average of 3.73
+```
+
+## 🎯 Complete Session Example
+
+Here's what a complete gaming session might look like:
+
+```bash
+$ python dice_roller.py
+🎲 Initializing Dice Roller...
+
+╔══════════════════════════════════════════════════════════════╗
+║                        🎲 DICE ROLLER 🎲                     ║
+║                                                              ║
+║        Welcome to the Ultimate Six-Sided Die Simulator!     ║
+║                                                              ║
+║        Press ENTER to roll the dice | Type 'quit' to exit   ║
+║        Type 'stats' to see your rolling statistics          ║
+╚══════════════════════════════════════════════════════════════╝
+
+🎊 Welcome! Let's start rolling some dice! 🎊
+
+🎮 Press ENTER to roll, 'stats' for statistics, or 'quit' to exit: 
+
+🎯 Get ready to roll...
+⏰ Rolling in 3...
+⏰ Rolling in 2...
+⏰ Rolling in 1...
+🚀 Rolling NOW!
+
+==================================================
+🎲 ROLLING THE DICE... 🎲
+==================================================
+
+🎊 RESULT 🎊
+==================================================
+    ┌─────────┐
+    │  ●   ●  │
+    │    ●    │
+    │  ●   ●  │
+    └─────────┘
+
+    🎯 You rolled a 5! 🎯
+==================================================
+
+    🎉 Excellent! Almost perfect! 🎉
+    ✨ 🎉🎉🎉 ✨
+
+📊 Roll #1 complete!
+
+🎮 Press ENTER to roll, 'stats' for statistics, or 'quit' to exit: stats
+
+============================================================
+📊 ROLLING STATISTICS 📊
+============================================================
+🎲 Total Rolls: 1
+📈 Average Roll: 5.00
+🏆 Highest Roll: 5
+📉 Lowest Roll: 5
+
+🎯 Roll Distribution:
+  1: [░░░░░░░░░░░░░░░░░░░░]  0 ( 0.0%)
+  2: [░░░░░░░░░░░
